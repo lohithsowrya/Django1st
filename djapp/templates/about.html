@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>About</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+body{font-family:Poppins;background:#0f172a;color:white;margin:0}
+nav{display:flex;justify-content:space-between;align-items:center;padding:15px 40px;background:rgba(255,255,255,0.05);backdrop-filter:blur(10px)}
+nav a{color:#cbd5e1;margin:0 15px;text-decoration:none;transition:.3s}
+nav a:hover{color:white;transform:translateY(-3px)}
+.about-box{
+    max-width:800px;
+    margin:60px auto;
+    background:rgba(255,255,255,0.05);
+    padding:30px;
+    border-radius:15px;
+    animation:fade 1s ease;
+}
+@keyframes fade{0%{opacity:0;}100%{opacity:1;}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div style="font-size:22px;font-weight:600;">MySite</div>
+  <div>
+    <a href="#">Home</a>
+    <a href="/about">About</a>
+    <a href="/login">Login</a>
+    <a href="/register">Register</a>
+  </div>
+</nav>
+
+<div class="about-box">
+    <h1>About Us</h1>
+    <p>We provide beautiful Django UI templates with animations and modern styling. These templates are ready to use and fully responsive.</p>
+    <p style="color:#94a3b8;">Feel free to integrate these in any Django project.</p>
+</div>
+
+</body>
+</html>
